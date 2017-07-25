@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="index.js"></script>
+        <script src="https://use.fontawesome.com/c1105c0217.js"></script>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    </head>
+    
+    <body>
+        <header>
+        <nav>
+          <button class="nav-toggle" id="nav-toggle"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+          <ul class="navbar nav-items mobile-nav-hidden" id="nav-items">
+                <li><a href="index.html"><img src="images/jharvey10.jpg" alt= "logo" height="75" width="70"></img></a></li>
+                <li class="active"><a href="index.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="accolades.html">Accolades</a></li>
+        
+             </ul> 
+        </nav>
+        </header>
+        
+        <main>
+            <h1>Jhana Harvey</h1>
+            <p>My name is Jhana Harvey, I am a 17 year old enrolled at Kenwood Academy. I enjoy being civically engaged and exhibiting my leadership skills.</p>
+            <div class="slideshow" align="center">
+                <img class="myslides" src="images/kahs.jpg" class="pic" ></img>
+                <img class="myslides" src="images/kwfocus.jpg.jpg" class="pic" ></img>
+            </div>
+       <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+   var i;
+   var x = document.getElementsByClassName("myslides");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}
+   x[myIndex-1].style.display = "block";
+   setTimeout(carousel, 2500); // Change image every 2.5 seconds
+}
+</script>
+        </main>
+        
+        
+       
+        <footer>
+            <ul class="navbar">
+            
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="accolades.html">Accolades</a></li>
+                 <i class="fa fa-linkedin-square fa-4x icon" aria-hidden="true"></i>
+             </ul>
+        </footer>
+    </body>
+</html>
